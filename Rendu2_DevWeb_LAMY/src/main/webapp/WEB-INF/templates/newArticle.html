@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nouvel article</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style-principal.css">
+</head>
+<body>
+
+<nav th:replace="~{fragments::menu('newArticle')}"></nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Ajouter un article</h3>
+
+
+            <form method="post" class="newarticle">
+
+                <div class="form">
+
+                    <div class="name">
+
+                        <label for="name" class="titre">Nom</label>
+                            <div class="colonne">
+                                 <input type="text" class="form-control" name="name" id="name">
+                            </div>
+                    </div>
+
+
+                    <div class="brand">
+
+                        <label for="brand" class="titre">Marque</label>
+                             <div class="colonne">
+                                 <input type="text" class="form-control" name="brand" id="brand">
+                            </div>
+                    </div>
+
+
+                    <div class="price">
+
+                        <label for="price" class="titre">Prix</label>
+                                <input type="text" class="form-control" name="price" id="price">
+
+                    </div>
+
+                    <div class="gender">
+
+                        <label for="gender" class="titre">Genre</label>
+                            <select id="gender" name="gender">
+                                <option value="man">Homme</option>
+                                <option value="woman">Femme</option>
+                            </select>
+                    </div>
+
+                    <div class="lebouton">
+
+                        <div class="btn">
+                            <input class="btn" type="submit" value="Enregistrer">
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

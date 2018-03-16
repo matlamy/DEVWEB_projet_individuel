@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Details Article</title>
+    <meta charset="UTF-8">
+
+    <link href="css/style-principal.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<nav th:replace="~{fragments::menu('listArticles')}"></nav>
+
+
+<div class="detailArticles">
+
+    <div class="row">
+        <div class="titreDetail">
+            <h3>Details de l'article</h3>
+
+            <div class="row">
+                <label class="entete">Nom</label>
+                <div class="detail">
+                    <p th:text="${detailsArticle.name}"></p>
+                </div>
+            </div>
+            <div class="row">
+                <label class="entete">Marque</label>
+                <div class="detail">
+                    <p th:text="${detailsArticle.brand}"></p>
+                </div>
+            </div>
+            <div class="row">
+                <label class="entete">Genre</label>
+                <div class="detail">
+                    <p th:text="${detailsArticle.gender}"></p>
+                </div>
+            </div>
+            <div class="row">
+                <label class="en tete">Prix</label>
+                <div class="detail">
+                    <p th:text="${detailsArticle.price}"></p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="bouton">
+                    <a class="btn btn-default" href="listArticles">Retour</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav th:replace="~{fragments::footer}"></nav>
+
+</body>
+</html>

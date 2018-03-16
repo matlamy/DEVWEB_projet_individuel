@@ -1,0 +1,115 @@
+#enTete { /*s'applique à la section d'id "enTete" */
+			text-align: center;
+			margin-bottom: 10px;}
+
+body { /*s'applique à tout le corps de la page*/
+		margin: auto;
+		width: 100%;
+		font-family: Tahoma,Arial,sans-serif}
+
+p {text-align: center;} /*s'applique à tous les paragraphes*/
+
+a{ /*s'applique à tous les liens*/
+	text-decoration: none;
+	color: pink;
+	font-weight: bold;}
+
+
+#menu {background-color: lightpink;} /*coloration de la barre de menu en rose le long de la page*/
+
+img.loupe { /*image de la section de class "loupe"*/
+			height: 30px;
+			padding: 10px;
+			float: right;
+			display: inline-block;}
+
+
+#femme, #homme {display: inline-block;} /*s'applique aux sections d'id "femme" et "homme " - mettre côte à côte le menu femme et homme*/
+
+.search { /* s'applique à la section de class "search" */
+			background-color: white;
+			width: 20%;
+			height: 35px;
+			border : none;
+			border-radius: 15px; 
+			margin-top: 10px;
+			float: right;
+			margin-right: 5px;
+			padding: 10px;}
+
+#femme a, #homme a { /*définition des critères pour les liens associés aux pages "Homme" et "Femmes"*/
+					    text-decoration: none;
+					    color: white;
+					    font-size: 25px;
+					    padding: 15px;
+					    margin-left: 20px;
+					    display:inline-block;} 
+
+
+#femme ul, #homme ul { /*s'applique aux listes des sections d'id "femme" et "homme" */
+					  display: inline;
+					  margin: 0;
+					  padding: 0;}
+
+#femme ul li, #homme ul li {display: inline-block;} /* alignement des blocs d'id "femme" et "homme" */
+
+#femme ul li:hover, #homme ul li:hover {background: #ccc;} /* coloration de l'icone du menu survolé */
+
+#femme ul li:hover ul, #homme ul li:hover ul {display: block;} /* apparition du bloc lorsqu'on survole*/
+
+#femme li ul, #homme li ul { /* camouflage du bloc et position fixe du menu */
+							  position: absolute;
+							  display: none;}
+
+#femme ul li ul li, #homme ul li ul li { /* création du bloc de liens */
+										background: #ccc; 
+										display: block;}
+
+#femme ul li ul li:hover, #homme ul li ul li:hover {background: #666;} /* coloration du lien survolé */
+
+ul {list-style-type: none;} /*Ne pas afficher la puce de la liste*/
+
+#promo img { /*s'applique aux images de la section d'id "promo"*/
+				margin-left: 10%;
+				padding: 20px;
+				width: 80%;}
+
+
+
+#chiffres { /*s'applique à la section d'id "chiffres" */
+			font-size : 25px;
+			margin: auto;
+			padding : 10px;
+			padding-bottom: 20px;
+			width: 30%;
+			margin: auto;
+			margin-top: 5px;
+			margin-bottom: 10px;}
+
+#chiffres p {border: 3px solid black;}  /*s'applique aux paragraphes de la section d'id "chiffres" */	
+  
+p.sousTitre {font-weight: bold;} /*s'applique aux paragraphes de la section de class "sousTitre" */
+
+
+table{ /*s'applique aux balises "table" */
+		margin : auto;
+	    border: 3px solid black;}
+
+
+footer { /*s'applique aux balises "footer" */
+		background-color: black ;
+		width : 100%;
+		margin: auto;
+		color : white;
+		text-align: center;
+		margin-bottom: 0px;
+		height: 30px;}
+
+footer p {padding: 10px;} /*s'applique aux paragraphes de la balise "footer" */
+
+footer a {color: white;} /*s'applique aux liens de la balise "footer" **/
+
+footer a:hover { /*coloration du lien de la balise "footer" en bleu lorsqu'on le survole*/
+				color: blue;
+				text-decoration: none;}
+

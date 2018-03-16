@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact - Les petites emplettes</title>
+	<link rel="stylesheet" type="text/css" href="css_contact.css">
+	<meta charset="utf-8">
+</head>
+
+
+<body>
+
+		<section class="fil">
+			<p><a href="Les_petites_emplettes.html">Les petites emplettes</a> > Contact</p>
+		</section>
+
+		<section id="contact"> <!--Début de section contact-->
+
+			<form>
+
+				<br><label for="situation">Date du jour :</label>
+				  <input type="date" name="bday">
+
+
+				<label for="prenom">Prénom(s)</label>
+			    	<input type="text" id="prenom" name="prenom" placeholder="Entrez votre/vos prénom(s)">
+
+			    <label for="nom">Nom</label>
+			    	<input type="text" id="nom" name="nom" placeholder="Nom de famille">
+
+		    	<label for="email">E-mail </label>
+					<input type="email" name="email" placeholder="votre_adresse@mail.x">
+
+
+				<label for="situation">Situation :</label> <!--Case à cocher pour savoir la situation de la personne-->
+				  <input type="radio" name="job" value="student"> Etudiant(e)
+				  <input type="radio" name="job" value="worker"> Salarié(e)
+				  <input type="radio" name="job" value="retired"> Retraité(e)
+
+
+			    <br><label for="region">Région</label> <!--Menu déroulant pour choisir sa région-->
+				    <select id="region" name="region">
+				      <option value="nord">Nord</option>
+				      <option value="sud">Sud</option>
+				      <option value="est">Est</option>
+				      <option value="ouest">Ouest</option>
+				    </select>
+
+
+			    <label for="message">Message</label> 
+			    	<textarea id="message" name="message" placeholder="Ecrivez-vous..." style="height:100px"></textarea>
+
+			    <input type="submit" value="Submit" onclick="alert('Votre message a bien été transmis ! Bonne continuation sur Les Petites Emplettes')" >
+
+  			</form>
+
+		</section> <!--Fin de section contact-->
+
+
+	<footer> <!--Bas de la page-->
+		<p>Mentions légales - Les petites emplettes - <a href="Contact.html">Contact</a></p> 
+	</footer>
+
+</body>
+
+</html>
+
+
+

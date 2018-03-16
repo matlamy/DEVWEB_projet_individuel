@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" type="text/css" href="css/style-principal.css">
+</head>
+<body>
+
+<nav th:replace="~{fragments::menu('contact')}"></nav>
+
+
+<h1>Veuillez indiquer votre identifiant et votre mot de passe :</h1>
+
+<form method="post" class="connexion">
+
+    <input type="text" name="identifiant" id="login">
+    <input type="password" name="motdepasse" id="mdp">
+    <input type="submit" value="Se connecter">
+   </form>
+
+<nav th:replace="~{fragments::footer}"></nav>
+
+
+</body>
+</html>

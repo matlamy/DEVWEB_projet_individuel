@@ -1,0 +1,64 @@
+body { /*s'applique à tout le corps de la page*/
+		margin: 0px;
+		font-family: Tahoma,Arial,sans-serif}
+
+ a { /*s'applique à tous les liens*/
+ 	text-decoration: none;
+ 	color: white;}
+
+
+.fil p { /*s'applique aux paragraphes de la section de class "fil" */
+		background-color: lightpink;
+		color : white;
+		font-weight: bold;
+		width: 100%;
+		margin-top: 0px;
+		font-size: 30px;
+		height: 45px;}
+
+.fil p a {  /*s'applique aux liens des paragraphes de la section de class "fil" */
+			text-decoration: none;
+		    color: white;
+		    font-size: 30px;
+		    padding: 10px;}
+
+.fil p a:hover {color:grey;} /*s'applique aux liens paragraphes de la section de class "fil" - coloration du lien en gris lorsq'on le survole */
+
+
+.bloc { /*s'applique à la section de class "bloc" */
+		display: inline-block;
+		text-align: center;
+		font-size: 30px;
+	 	box-shadow: 0 4px 8px 0;
+	    border-radius: 5px;}
+
+figcaption {padding: 2px 16px;} /* s'applique aux balises "figcaption" */
+
+img.efface, img.modif, img.cherche {height: 30px;} /*s'applique aux images des sections de class "cherche", "modif" et "efface"*/
+
+
+.grosBloc { /*s'applique à la section de class "grosBloc" */
+			display : block;
+			margin: auto;
+			width: 90%;}
+
+.grosBloc a { /*s'applique aux liens de la section de class "grosBloc" */
+			text-decoration: none;
+			color: black;}
+
+footer { /*s'applique aux balises "footer" */
+		background-color: black ;
+		width : 100%;
+		margin: auto;
+		color : white;
+		text-align: center;
+		margin-bottom: 0px;
+		height: 30px;}
+
+footer p {padding: 10px;} /*s'applique aux paragraphes des balises "footer" */
+
+
+footer a:hover {color: blue;} /*coloration du lien de la balise "footer" en bleu lorsqu'on le survole*/
+
+
+

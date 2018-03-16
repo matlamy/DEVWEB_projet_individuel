@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragments</title>
+</head>
+<body>
+
+<div th:fragment="menu(currentPage)">
+
+    <div id="menu">
+
+    <div id="home">
+
+        <ul><li th:class="${currentPage == 'home'} ? 'active' : ''"><a href="home">Accueil</a></li></ul>
+    </div>
+
+    <div id="femme">
+
+        <ul><li th:class="${currentPage == 'women'} ? 'active' : ''"><a href="http://www.asos.fr/femme/">Femmes</a>
+            <ul>
+                <li><a href="http://www.asos.fr/femme/robes/cat/?cid=8799&nlid=ww|v%C3%AAtements|voir+par+produit">Robes</a></li>
+                <li><a href="http://www.asos.fr/femme/tops/cat/?cid=4169&nlid=ww|v%C3%AAtements|voir+par+produit">Hauts</a></li>
+                <li><a href="http://www.asos.fr/femme/pantalons-et-leggings/cat/?cid=2640&nlid=ww|v%C3%AAtements|voir+par+produit">Pantalons</a></li>
+                <li><a href="http://www.asos.fr/femme/chaussures/cat/?cid=4172&nlid=ww|chaussures|voir+par+produit">Chaussures</a></li>
+                <li><a href="http://www.asos.fr/femme/accessoires/cat/?cid=4174&nlid=ww|accessoires|voir+par+produit">Accessoires</a></li>
+                <li><a href="http://www.asos.fr/femme/sacs-et-porte-monnaie/cat/?cid=8730&nlid=ww|accessoires|voir+par+produit">Sacs</a></li>
+            </ul>
+        </li></ul>
+    </div>
+
+
+    <div id="homme">
+        <ul><li th:class="${currentPage == 'men'} ? 'active' : ''"><a href="http://www.asos.fr/homme/">Hommes</a>
+            <ul>
+                <li><a href="http://www.asos.fr/homme/chemises/cat/?cid=3602&nlid=mw|v%C3%AAtements|nouveaux+articles">Chemises</a></li>
+                <li><a href="http://www.asos.fr/homme/vestes-et-manteaux/cat/?cid=3606&nlid=mw|v%C3%AAtements|nouveaux+articles">Vestes</a></li>
+                <li><a href="http://www.asos.fr/homme/pantalons-et-chinos/cat/?cid=4910&nlid=mw|v%C3%AAtements|nouveaux+articles">Pantalons</a></li>
+                <li><a href="http://www.asos.fr/homme/costumes/cat/?cid=5678&nlid=mw|v%C3%AAtements|nouveaux+articles">Costumes</a></li>
+                <li><a href="http://www.asos.fr/homme/chaussures-bottes-baskets/cat/?cid=4209&nlid=mw|chaussures|voir+par+produit">Chaussures</a></li>
+                <li><a href="http://www.asos.fr/homme/accessoires/cat/?cid=4210&nlid=mw|accessoires|voir+par+produit">Accessoires</a></li>
+            </ul>
+        </li></ul>
+    </div>
+
+    <input type="search" name="search" class="search" placeholder="Recherche"><img src="img/loupe.png" class="loupe">
+
+    <div id="liste">
+
+        <ul><li th:class="${currentPage == 'listArticles'} ? 'active' : ''"><a href="listArticles">Nouveaux Articles</a></li></ul></div>
+
+    <div id="ajout">
+
+        <ul><li th:class="${currentPage == 'newArticle'} ? 'active' : ''"><a href="newArticle">Ajouter un article</a></li></ul></div>
+
+        <div id="contact">
+
+            <ul><li th:class="${currentPage == 'contact'} ? 'active' : ''"><a href="contact">Nous contacter</a></li></ul></div>
+
+
+    </div>
+</div> <!-- fin du fragment menu-->
+
+<div th:fragment="footer" class="footer">
+
+    <footer> <!--Bas de la page-->
+        <p>Mentions légales - <a href="home"> Les petites emplettes </a>- <a href="contact">Contact</a></p>
+</footer></div>
+
+
+</body>
+</html>

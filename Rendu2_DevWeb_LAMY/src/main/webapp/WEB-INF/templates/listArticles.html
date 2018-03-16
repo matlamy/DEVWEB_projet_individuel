@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Liste des nouveaux articles</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style-principal.css">
+    <script type="text/javascript" src="js/nouveauxarticles.js"></script>
+</head>
+<body>
+
+<nav th:replace="~{fragments::menu('listArticles')}"></nav>
+
+<div class="tableau">
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Nouveaux Articles (<span id="nombrearticles"></span>)</h3>
+            <table class="tableArticles">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Marque</th>
+                    <th>Genre</th>
+                    <th>Prix</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="article : ${articlesList}">
+                    <td th:text="${article.id}"></td>
+                    <td th:text="${article.name}"></td>
+                    <td th:text="${article.brand}"></td>
+                    <td th:text="${article.gender}"></td>
+                    <td th:text="${article.price}+' euros'"></td>
+                    <td><a th:href="${'article?id='+article.id}"
+                           th:title="${'Details for '+article.name}"><img src="img/loupe.png" style="height: 40px;"></a>
+                        <a th:href="${'delete?id='+article.id}"><img src="img/erase.png" style="height: 40px;"></a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<nav th:replace="~{fragments::footer}"></nav>
+
+
+</body>
+</html>

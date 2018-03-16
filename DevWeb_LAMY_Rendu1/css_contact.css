@@ -1,0 +1,70 @@
+body { /*s'applique à tout le corps de la page*/
+		margin: auto;
+		width: 100%;
+		font-family: Tahoma,Arial,sans-serif}
+
+.fil p { /*s'applique aux paragraphes de la section de class "fil" */
+		background-color: lightpink;
+		color : white;
+		font-weight: bold;
+		width: 100%;
+		margin-top: 0px;
+		font-size: 35px;
+		height: 45px;}
+
+.fil p a { /*s'applique aux liens des paragraphes de la section de class "fil" */
+			text-decoration: none;
+		    color: white;
+		    font-size: 35px;}
+
+.fil p a:hover {color:grey;} /*s'applique aux liens paragraphes de la section de class "fil" - coloration du lien en gris lorsq'on le survole */
+
+input[type=text], select, textarea, input[type=email], input[type=date]{ /*s'applique aux input de type "text", "email", "date", aux select et aux textarea */
+																	    width: 70%;
+																	    padding: 12px;
+																	    border: 1px solid #ccc;
+																	    border-radius: 4px;
+																	    box-sizing: border-box;
+																	    margin-top: 6px;
+																	    margin-bottom: 6px;
+																	    resize: vertical;
+																	    display: block;
+																	    float: center;}
+
+input[type=submit] { /*s'applique aux input de type "submit" */
+				    background-color: #D1D1D1;
+				    color: white;
+				    padding: 12px 20px;
+				    border: none;
+				    border-radius: 4px;
+				    cursor: pointer;}
+
+
+input[type=submit]:hover { background-color: black;} /*s'applique aux input de type "submit" - coloration en noir lorsqu'on le survole*/
+
+#contact { /*s'applique à la section d'id "contact" */
+		    border-radius: 5px;
+		    background-color: #f2f2f2;
+		    padding: 15px;
+		  	border: 1px solid black;
+		  	width: 40%;
+		  	margin:auto;} 
+
+
+
+label {padding: 5px;} /*s'applique aux balises "labe" */
+
+footer { /*s'applique aux balises "footer" */
+		padding-bottom: 0px;
+		background-color: black ;
+		width : 100%;
+		margin: auto;
+		color : white;
+		text-align: center;
+		height: 30px;}
+
+footer a { /*s'applique aux liens de la balise "footer" */
+			text-decoration: none;
+			color: white;}
+
+footer a:hover {color:blue;} /*coloration du lien de la balise "footer" en bleu lorsqu'on le survole*/

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Rendu2_DevWeb:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="devweb_lamy-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Rendu2_DevWeb:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,220 @@
+#enTete { /*s'applique à la section d'id "enTete" */
+    text-align: center;
+    margin-bottom: 10px;}
+
+body { /*s'applique à tout le corps de la page*/
+    margin: auto;
+    width: 100%;
+    font-family: Tahoma,Arial,sans-serif}
+
+p {text-align: center;} /*s'applique à tous les paragraphes*/
+
+a{ /*s'applique à tous les liens*/
+    text-decoration: none;
+    color: pink;
+    font-weight: bold;}
+
+h3 {
+    text-align: center;
+}
+
+
+#menu {background-color: lightpink;} /*coloration de la barre de menu en rose le long de la page*/
+
+img.loupe { /*image de la section de class "loupe"*/
+    height: 30px;
+    padding: 10px;
+    float: right;
+    display: inline-block;}
+
+
+#femme,#homme,#liste,#home,#ajout,#contact  {display: inline-block;} /*s'applique aux sections d'id "femme", "homme ", "liste" - mettre côte à côte le menu femme et homme*/
+
+.search { /* s'applique à la section de class "search" */
+    background-color: white;
+    width: 20%;
+    height: 35px;
+    border : none;
+    border-radius: 15px;
+    margin-top: 10px;
+    float: right;
+    margin-right: 5px;
+    padding: 10px;}
+
+#femme a, #homme a,#liste a,#home a,#ajout a,#contact a { /*définition des critères pour les entetes associés aux pages, "Nouveaux articles", "Homme" et "Femmes"*/
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    margin-left: 20px;
+    display:inline-block;}
+
+
+#femme ul, #homme ul, #liste ul,#home ul,#ajout ul,#contact ul { /*s'applique aux listes des sections d'id "liste", "femme" et "homme" */
+    display: inline;
+    margin: 0;
+    padding: 0;}
+
+#femme ul li, #homme ul li, #liste ul li,#home ul li,#ajout ul li,#contact ul li {display: inline-block;} /* alignement des blocs d'id "liste", "femme" et "homme" */
+
+#femme ul li:hover, #homme ul li:hover, #liste ul li:hover,#home ul li:hover,#ajout ul li:hover,#contact ul li:hover {background: #ccc;} /* coloration de l'icone du menu survolé */
+
+#femme ul li:hover ul, #homme ul li:hover ul, #liste ul li:hover ul,#home ul li:hover ul,#ajout ul li:hover ul,#contact ul li:hover ul {display: block;} /* apparition du bloc lorsqu'on survole*/
+
+#femme li ul, #homme li ul, #liste li ul,#home li ul,#ajout li ul,#contact li ul { /* camouflage du bloc et position fixe du menu */
+    position: absolute;
+    display: none;}
+
+#femme ul li ul li, #homme ul li ul li,#home ul li ul li,#ajout ul li ul li,#contact ul li ul li { /* création du bloc de liens */
+    background: #ccc;
+    display: block;}
+
+#femme ul li ul li:hover, #homme ul li ul li:hover,#liste ul li ul li:hover,#home ul li ul li:hover,#ajout ul li ul li:hover,#contact ul li ul li:hover {background: #666;} /* coloration du lien survolé */
+
+ul {list-style-type: none;} /*Ne pas afficher la puce de la liste*/
+
+#promo img { /*s'applique aux images de la section d'id "promo"*/
+    margin-left: 10%;
+    padding: 20px;
+    width: 80%;}
+
+.active {background: #ccc;}
+
+
+p.sousTitre {font-weight: bold;} /*s'applique aux paragraphes de la section de class "sousTitre" */
+
+
+.footer {
+    background-color: black ;
+    width : 100%;
+    color : white;
+    text-align: center;
+    height: 30px;
+    bottom: 20px;
+    }
+
+.footer p {padding: 10px;} /*s'applique aux paragraphes de la balise "footer" */
+
+.footer a {color: white;} /*s'applique aux liens de la balise "footer" **/
+
+.footer a:hover { /*coloration du lien de la balise "footer" en bleu lorsqu'on le survole*/
+    color: blue;
+    text-decoration: none;}
+
+
+input[type=text],input[type=password] select, textarea, input[type=email], input[type=date] {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
+    display: block;  }
+
+input[type=submit] {
+    background-color: #D1D1D1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;}
+
+.bouton {
+    background-color: #D1D1D1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;}
+
+.bouton:hover { background-color: black;}
+
+input[type=submit]:hover { background-color: black;}
+
+#contacter {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border: 1px solid black;
+    width:70%;
+    margin:auto;}
+
+
+label {padding: 5px;}
+
+
+.newarticle  {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border: 1px solid black;
+    width: 20%;
+    margin:auto;
+    display : flex;
+    justify-content: center;}
+
+.tableau {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border: 1px solid black;
+    width:70%;
+    margin:auto;
+    text-align: center;
+    font-size: 40px;}
+
+
+
+.tableau {
+    display : flex;
+    justify-content: center;
+
+}
+
+
+
+.detailArticles {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: 30px;
+    width:30%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.entete {
+    display: inline-block;
+}
+.detail {
+    display : inline-block;
+}
+
+.bouton a {
+    color : white;
+}
+
+.connexion {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border: 1px solid black;
+    width: 50%;
+    margin:auto;
+    display : flex;
+    justify-content: center;
+    display: inline-block;
+    display : flex;
+    justify-content: center;
+}
+
+
+
+
+
+
